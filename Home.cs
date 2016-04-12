@@ -41,7 +41,7 @@ namespace winFormsClassChat
             //database connection string - local
             //conn.ConnectionString = "Data Source= (LocalDB)\\MSSQLLocalDB; AttachDbFilename = C:\\Users\\lyonss2\\Documents\\ClassChat.mdf; Integrated Security = True; Connect Timeout = 30";
             //database connection string - Tom's Server
-            conn.ConnectionString = "Data Source=tcp:173.62.15.130,1434;Initial Catalog=ClassChat;Integrated Security=False;User ID=classchataccess;Password=2u4LI7classchat!;Connect Timeout=15;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+            conn.ConnectionString = "Removed for security reasons";
             cmd.Parameters.AddWithValue("@pUN", lblUserName.Text);
             cmd.CommandText = "SELECT * FROM CollegeInfo WHERE UserName = @pUN";
             cmd.CommandType = CommandType.Text;
